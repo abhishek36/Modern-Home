@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+height: 100%;
+width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 80px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    text-transform: capitalize;
+    font-weight: 500;
+    align-items: center;
+}
+
+button{
+    border: none;
+    background: black;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 50px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.hero{
+    padding-top: 60px;
+    display: flex;
+    position: relative;
+}
+
+.hero img{
+    position: absolute;
+    /* bottom: 0; */
+    width: 60%;
+    right: 0;
+}
+
+.hero .hero-left{
+    padding-left: 80px;
+    width: 50%;
+}
+
+.hero-left h2{
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.hero-left h3{
+    font-size: 38px;
+}
+
+.hero-left .para{
+    text-transform: capitalize;
+    color: gray;
+    margin-bottom: 40px;
+}
+
+.hero-left span{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.hero-left .play{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.play .play-icon{
+    width: 30px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-left .rate{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width:768px){
+
+    nav{
+        padding: 20px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .hero .hero-left{
+        padding-inline: 20px;
+        width: 100%;
+    }
+
+    .hero img{
+        top: 500px;
+        width: 100%;
+    }
+
+    .hero-left .para br{
+        display: none;
+    }
+
+    .hero-left .rate{
+        width: 100%;
+    }
+}
+
+@media (max-width:500px){
+    button{
+        padding: 10px 20px;
+    }
+}
